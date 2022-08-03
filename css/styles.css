@@ -103,7 +103,9 @@ body {
 }
 
 .header-link-more {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -133,6 +135,11 @@ body {
 
 .header-info .info-item + .info-item {
   margin-left: 50px;
+}
+
+.icon-envelope,
+.icon-tel {
+  margin-right: 10px;
 }
 
 /*Hero*/
