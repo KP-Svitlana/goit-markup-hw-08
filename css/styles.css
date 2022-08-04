@@ -140,6 +140,7 @@ body {
 .icon-envelope,
 .icon-tel {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /*Hero*/
@@ -194,6 +195,21 @@ body {
 }
 
 /*Features*/
+
+.f-icon {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
 
 .features-sub-title {
   margin: 0 0 10px 0;
@@ -292,7 +308,7 @@ img {
 }
 
 .team-text {
-  margin: 0;
+  margin: 0 0 16px 0;
 
   font-size: 16px;
   line-height: 1.19;
@@ -300,6 +316,46 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
+.team-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--extra-color);
+  border-radius: 50px;
+  gap: 10px;
+}
+.team-soc-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.team-soc-item:hover {
+  background-color: #2196f3;
+}
+
+.team-soc-item:hover .soc-item {
+  fill: var(--extra-color);
+}
+
+.soc-item {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+/* .team-soc-link:hover,
+.team-soc-link:focus {
+  color: var(--extra-color);
+} */
 
 /*Footer*/
 
