@@ -245,7 +245,8 @@ body {
 /*Work*/
 
 .work-title,
-.team-title {
+.team-title,
+.customers-title {
   margin: 0 0 50px 0;
 
   font-weight: 700;
@@ -321,6 +322,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .team-soc-item {
@@ -331,18 +333,20 @@ img {
   height: 44px;
   background-color: var(--extra-color);
   border-radius: 50px;
-  gap: 10px;
 }
+
 .team-soc-link {
   text-decoration: none;
   color: var(--text-color);
 }
 
-.team-soc-item:hover {
+.team-soc-item:hover,
+.team-soc-item:focus {
   background-color: #2196f3;
 }
 
-.team-soc-item:hover .soc-item {
+.team-soc-item:hover .soc-item,
+.team-soc-item:focus .soc-item {
   fill: var(--extra-color);
 }
 
@@ -352,10 +356,44 @@ img {
   height: 20px;
 }
 
-/* .team-soc-link:hover,
-.team-soc-link:focus {
-  color: var(--extra-color);
-} */
+/*Customers*/
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--brand-color);
+}
+
+.customers-link {
+  color: var(--text-color);
+}
+
+.customers-item:hover .customers-icon {
+  fill: var(--brand-color);
+}
+
+.customers-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
 
 /*Footer*/
 
@@ -363,6 +401,13 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-more {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 70px;
 }
 
 .footer-logo {
@@ -393,6 +438,40 @@ img {
 .footer-text:focus,
 .footer-link:focus {
   color: var(--brand-color);
+}
+
+.footer-title {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--extra-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+.footer-soc-link {
+  text-decoration: none;
+  color: var(--extra-color);
+}
+
+.footer-soc-item:hover,
+.footer-soc-item:focus {
+  background-color: #2196f3;
 }
 
 /*Portfolio Buttons*/
