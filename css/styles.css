@@ -395,7 +395,8 @@ img {
   border: 1px solid var(--brand-color);
 }
 
-.customers-link:hover .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--brand-color);
 }
 
