@@ -96,26 +96,13 @@ body {
 
 .header-link {
   display: block;
+  position: relative;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
   text-decoration: none;
   color: var(--main-color);
-}
-
-.header-link-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-.header-link {
-  position: relative;
 }
 
 .header-link::after {
@@ -132,6 +119,17 @@ body {
 
 .current.header-link::after {
   opacity: 1;
+}
+
+.header-link-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .header-link:hover,
@@ -287,6 +285,7 @@ body {
 
 .work-item {
   margin-left: 30px;
+  position: relative;
 }
 
 .work-item:first-child {
@@ -297,6 +296,26 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.work-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+}
+
+.img-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--extra-color);
 }
 
 /*Team*/
