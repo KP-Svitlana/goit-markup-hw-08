@@ -114,6 +114,26 @@ body {
   color: var(--text-color);
 }
 
+.header-link {
+  position: relative;
+}
+
+.header-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.current.header-link::after {
+  opacity: 1;
+}
+
 .header-link:hover,
 .header-link:focus,
 .header-link-more:hover,
