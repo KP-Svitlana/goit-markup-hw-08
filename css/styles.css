@@ -596,7 +596,7 @@ img {
 }
 
 .portfolio-item {
-  width: 370px;
+  width: calc(100% - 60px) / 3;
 }
 
 .portfolio-link {
@@ -616,11 +616,17 @@ img {
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio-overlay-text {
   position: absolute;
   top: 0;
   left: 0;
 
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--extra-color);
+  padding: 63px 24px;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
@@ -629,17 +635,8 @@ img {
     var(--transition-timing-function);
 }
 
-.portfolio-link:hover .portfolio-overlay {
+.portfolio-link:hover .portfolio-overlay-text {
   transform: translateY(0);
-}
-
-.portfolio-overlay-text {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--extra-color);
-  padding: 63px 24px;
 }
 
 .portfolio-link-text {
