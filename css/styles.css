@@ -105,13 +105,15 @@ body {
 
   text-decoration: none;
   color: var(--main-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-link::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   height: 4px;
   width: 100%;
   background-color: var(--brand-color);
@@ -304,10 +306,14 @@ img {
 .work-overlay {
   position: absolute;
   bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  padding: 27px;
 }
 
 .work-overlay-title {
@@ -315,7 +321,6 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--extra-color);
@@ -635,7 +640,8 @@ img {
     var(--transition-timing-function);
 }
 
-.portfolio-link:hover .portfolio-overlay-text {
+.portfolio-link:hover .portfolio-overlay-text,
+.portfolio-link:focus .portfolio-overlay-text {
   transform: translateY(0);
 }
 
@@ -684,9 +690,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
   transition: translate var(--transition-duration)
       var(--transition-timing-function),
-    scale var(--transition-duration) var(--transition-timing-function);
+    scale var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function),
+    opacity var(--transition-duration) var(--transition-timing-function);
 
   width: 528px;
   min-height: 581px;
