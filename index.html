@@ -487,34 +487,40 @@
             <use href="./imges/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+
         <form class="modal-form">
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-          <lable for="name" class="name">Ім'я</lable>
-          <input
-            class="modal-input"
-            type="text"
-            name="name"
-            id="name"
-            placeholder=" "
-          />
-          <lable class="tel" for="tel">Телефон</lable>
-          <input
-            class="modal-input"
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder=" "
-          />
-          <lable for="email" class="email">Пошта</lable>
-          <input
-            class="modal-input"
-            type="email"
-            class="email"
-            id="email"
-            placeholder=" "
-          />
-          <label for="coment">Коментар</label>
-          <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
+          <div class="modal-field">
+            <label for="name" class="modal-label">Ім'я</label>
+            <input
+              class="modal-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
+          </div>
+          <div class="modal-field">
+            <label for="tel" class="modal-label">Телефон</label>
+            <input class="modal-input" type="tel" id="tel" placeholder=" " />
+          </div>
+          <div class="modal-field">
+            <label for="email" class="modal-label">Пошта</label>
+            <input
+              class="modal-input"
+              type="email"
+              id="email"
+              placeholder=" "
+            />
+          </div>
+          <div class="modal-field">
+            <label for="coment" class="modal-label">Коментар</label>
+            <textarea
+              name="coment"
+              id="coment"
+              class="modal-textarea"
+            ></textarea>
+          </div>
         </form>
       </div>
     </div>
