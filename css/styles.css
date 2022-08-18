@@ -540,6 +540,18 @@ img {
   background-color: var(--brand-color);
 }
 
+.footer-sab-title {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--extra-color);
+}
+
+.footer-sab-icon {
+  width: 24px;
+  height: 24px;
+}
+
 /*Portfolio Buttons*/
 
 .portfolio-list-btn {
