@@ -569,6 +569,8 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+
+  transition: border-color var(--transition);
 }
 
 .footer-sab-input::placeholder {
@@ -576,6 +578,10 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-sab-input:focus {
+  border-color: var(--brand-color);
 }
 
 .footer-sab-btn {
@@ -587,6 +593,7 @@ img {
   min-width: 200px;
   margin-left: 12px;
   padding: 0;
+  cursor: pointer;
 
   font-size: 16px;
   line-height: 1.99;
@@ -766,10 +773,20 @@ img {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icon-close-black {
+  transition: fill var(--transition);
+}
+
+.modal-btn-close:focus .icon-close-black,
+.modal-btn-close:hover .icon-close-black {
+  fill: var(--brand-color);
 }
 
 .backdrop.is-hidden {
@@ -834,6 +851,17 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color var(--transition);
+}
+
+.modal-input:focus,
+.modal-textarea:focus {
+  border-color: var(--brand-color);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--brand-color);
 }
 
 .modal-textarea {
@@ -843,6 +871,8 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color var(--transition);
 }
 
 .modal-icon {
@@ -853,6 +883,8 @@ img {
 
   width: 18px;
   height: 18px;
+
+  transition: fill var(--transition);
 }
 
 .modal-textarea::placeholder {
@@ -862,8 +894,45 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+.icon {
+  fill: transparent;
+  transition: fill var(--transition);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+.checkbox:checked + .checkbox-icon .icon {
+  fill: var(--extra-color);
+}
+
 .checkbox-label {
-  margin-left: 8.38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
