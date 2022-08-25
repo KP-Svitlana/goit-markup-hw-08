@@ -1,0 +1,89 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-more {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
+.footer-logo {
+  margin: 0 0 20px 0;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-text,
+.footer-link {
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--extra-color);
+  font-style: normal;
+  transition: color var(--transition);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text:hover,
+.footer-link:hover,
+.footer-text:focus,
+.footer-link:focus {
+  color: var(--brand-color);
+}
+
+.footer-title {
+  margin: 0 0 20px 0;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--extra-color);
+}
+
+.footer-soc {
+  margin-right: 93px;
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--extra-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition: background-color var(--transition);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--brand-color);
+}

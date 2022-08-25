@@ -1,0 +1,45 @@
+.f-icon {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-sub-title {
+  margin: 0 0 10px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.features-item:first-child {
+  margin-left: 0;
+}
+
+.features-text {
+  margin: 0;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
