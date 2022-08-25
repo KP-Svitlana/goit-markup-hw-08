@@ -45,7 +45,7 @@ body {
   padding-bottom: 94px;
 }
 
-.section-add {
+.section--reset {
   padding-top: 0;
 }
 
@@ -53,6 +53,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.title {
+  margin: 0 0 50px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -66,16 +75,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.first-logo {
+.logo--header {
+  margin-right: 93px;
+}
+
+.logo__text--dark {
   color: #000000;
 }
 
-.last-logo {
+.logo__text--white {
   color: var(--extra-color);
 }
 
-.header-logo {
-  margin-right: 93px;
+.logo--footer {
+  margin: 0 0 20px 0;
 }
 
 .header {
@@ -86,16 +99,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.header-info {
-  margin-left: auto;
-}
-
-.header-link {
+.navigation__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -105,7 +114,7 @@ img {
   transition: color var(--transition);
 }
 
-.header-link::after {
+.navigation__link::after {
   content: "";
   display: block;
   position: absolute;
@@ -117,11 +126,15 @@ img {
   opacity: 0;
 }
 
-.current.header-link::after {
+.navigation__link--current.navigation__link::after {
   opacity: 1;
 }
 
-.header-link-more {
+.info {
+  margin-left: auto;
+}
+
+.info__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,32 +145,31 @@ img {
   transition: color var(--transition);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link-more:hover,
-.header-link-more:focus {
+.navigation__link:hover,
+.navigation__link:focus,
+.info__link:hover,
+.info__link:focus {
   color: var(--brand-color);
 }
 
-.current {
+.navigation__link--current {
   color: var(--brand-color);
 }
 
-.header-nav,
-.header-info {
+.navigation,
+.info {
   display: flex;
 }
 
-.header-nav .nav-item + .nav-item {
+.navigation .navigation__item + .navigation__item {
   margin-left: 50px;
 }
 
-.header-info .info-item + .info-item {
+.info .info__item + .info__item {
   margin-left: 50px;
 }
 
-.icon-envelope,
-.icon-tel {
+.info__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -175,7 +187,7 @@ img {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 30px;
@@ -190,7 +202,7 @@ img {
   color: var(--extra-color);
 }
 
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -208,7 +220,20 @@ img {
   height: 50px;
 }
 
-.f-icon {
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.features__item:first-child {
+  margin-left: 0;
+}
+
+.features__image {
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
@@ -218,12 +243,12 @@ img {
   margin-bottom: 30px;
 }
 
-.features-icon {
+.features__icon {
   width: 70px;
   height: 70px;
 }
 
-.features-sub-title {
+.features__sub-title {
   margin: 0 0 10px 0;
   font-weight: 700;
   font-size: 14px;
@@ -232,51 +257,27 @@ img {
   text-transform: uppercase;
 }
 
-.features-list {
-  display: flex;
-}
-
-.features-item {
-  width: 270px;
-  margin-left: 30px;
-}
-
-.features-item:first-child {
-  margin-left: 0;
-}
-
-.features-text {
+.features__text {
   margin: 0;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
-.work-title,
-.team-title,
-.customers-title {
-  margin: 0 0 50px 0;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.work-list {
+.work__list {
   display: flex;
 }
 
-.work-item {
+.work__item {
   margin-left: 30px;
   position: relative;
 }
 
-.work-item:first-child {
+.work__item:first-child {
   margin-left: 0;
 }
 
-.work-overlay {
+.work__overlay {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -287,7 +288,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work-overlay-title {
+.work__title {
   margin: 0;
   font-style: normal;
   font-weight: 700;
@@ -301,12 +302,12 @@ img {
   background-color: #f5f4fa;
 }
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-item {
+.team__item {
   max-width: 270px;
   background-color: var(--extra-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -433,10 +434,6 @@ img {
 .footer-address {
   margin-right: 70px;
   flex-grow: 1;
-}
-
-.footer-logo {
-  margin: 0 0 20px 0;
 }
 
 .footer-item:not(:last-child) {

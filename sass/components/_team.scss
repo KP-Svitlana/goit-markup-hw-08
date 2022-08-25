@@ -2,12 +2,12 @@
   background-color: #f5f4fa;
 }
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-item {
+.team__item {
   max-width: 270px;
 
   background-color: var(--extra-color);

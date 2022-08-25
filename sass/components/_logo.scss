@@ -10,10 +10,18 @@
   letter-spacing: 0.03em;
 }
 
-.first-logo {
+.logo--header {
+  margin-right: 93px;
+}
+
+.logo__text--dark {
   color: #000000;
 }
 
-.last-logo {
+.logo__text--white {
   color: var(--extra-color);
+}
+
+.logo--footer {
+  margin: 0 0 20px 0;
 }

@@ -1,29 +1,17 @@
-.work-title,
-.team-title,
-.customers-title {
-  margin: 0 0 50px 0;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.work-list {
+.work__list {
   display: flex;
 }
 
-.work-item {
+.work__item {
   margin-left: 30px;
   position: relative;
 }
 
-.work-item:first-child {
+.work__item:first-child {
   margin-left: 0;
 }
 
-.work-overlay {
+.work__overlay {
   position: absolute;
   bottom: 0;
 
@@ -36,7 +24,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work-overlay-title {
+.work__title {
   margin: 0;
   font-style: normal;
   font-weight: 700;
