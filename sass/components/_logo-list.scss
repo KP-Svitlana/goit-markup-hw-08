@@ -1,16 +1,16 @@
-.customers-list {
+.logo-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 
-.customers-item {
+.logo-list__item {
   width: 170px;
   height: 92px;
 }
 
-.customers-link {
+.logo-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,19 +23,19 @@
   transition: color var(--transition), border var(--transition);
 }
 
-.customers-icon {
+.logo-list__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
   transition: fill var(--transition);
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.logo-list__link:hover,
+.logo-list__link:focus {
   border: 1px solid var(--brand-color);
 }
 
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
+.logo-list__link:hover .logo-list__icon,
+.logo-list__link:focus .logo-list__icon {
   fill: var(--brand-color);
 }
