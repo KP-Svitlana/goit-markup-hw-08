@@ -22,18 +22,23 @@
   color: var(--main-color);
 
   transition: color var(--transition);
-}
 
-.navigation__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  height: 4px;
-  width: 100%;
-  background-color: var(--brand-color);
-  border-radius: 2px;
-  opacity: 0;
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--brand-color);
+    border-radius: 2px;
+    opacity: 0;
+  }
 }
 
 .navigation__link--current.navigation__link::after {
@@ -54,13 +59,11 @@
   text-decoration: none;
   color: var(--text-color);
   transition: color var(--transition);
-}
 
-.navigation__link:hover,
-.navigation__link:focus,
-.info__link:hover,
-.info__link:focus {
-  color: var(--brand-color);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 
 .navigation__link--current {

@@ -70,7 +70,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero__btn" data-modal-open>
+          <button type="button" class="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -462,20 +462,20 @@
           </ul>
         </div>
 
-        <form class="subscribe-form">
-          <p class="subscribe-form__title">Підпишіться на розсилку</p>
-          <div class="subscribe-form__item">
-            <label class="subscribe-form__lable">
+        <form class="form-subscribe">
+          <p class="form-subscribe__title">Підпишіться на розсилку</p>
+          <div class="form-subscribe__item">
+            <label class="form-subscribe__lable">
               <input
                 type="text"
                 name="email"
-                class="subscribe-form__input"
+                class="form-subscribe__input"
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="subscribe-form__btn">
+            <button type="submit" class="button button--left button--flex">
               Підписатися
-              <svg class="subscribe-form__icon">
+              <svg class="form-subscribe__icon">
                 <use href="./imges/sprite.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -485,73 +485,80 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal-window">
-        <button type="button" class="modal-btn-close" data-modal-close>
-          <svg class="icon-close-black" width="18px" height="18px">
+      <div class="modal">
+        <button type="button" class="modal__btn-close" data-modal-close>
+          <svg class="modal__icon-close" width="18px" height="18px">
             <use href="./imges/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
 
-        <form class="modal-form">
-          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="form-order">
+          <h2 class="form-order__title">
+            Залиште свої дані, ми вам передзвонимо
+          </h2>
 
-          <div class="modal-field">
-            <label for="name" class="modal-label">Ім'я</label>
-            <div class="modal-svg-wrap">
-              <input class="modal-input" type="text" name="name" id="name" />
-              <svg class="modal-icon">
+          <div class="form-order__field">
+            <label for="name" class="form-order__label">Ім'я</label>
+            <div class="form-order__svg-wrap">
+              <input
+                class="form-order__input"
+                type="text"
+                name="name"
+                id="name"
+              />
+              <svg class="form-order__icon">
                 <use href="./imges/sprite.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-field">
-            <label for="tel" class="modal-label">Телефон</label>
-            <div class="modal-svg-wrap">
-              <input class="modal-input" type="tel" id="tel" />
-              <svg class="modal-icon">
+          <div class="form-order__field">
+            <label for="tel" class="form-order__label">Телефон</label>
+            <div class="form-order__svg-wrap">
+              <input class="form-order__input" type="tel" id="tel" />
+              <svg class="form-order__icon">
                 <use href="./imges/sprite.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="email" class="modal-label">Пошта</label>
-            <div class="modal-svg-wrap">
-              <input class="modal-input" type="email" id="email" />
-              <svg class="modal-icon">
+          <div class="form-order__field">
+            <label for="email" class="form-order__label">Пошта</label>
+            <div class="form-order__svg-wrap">
+              <input class="form-order__input" type="email" id="email" />
+              <svg class="form-order__icon">
                 <use href="./imges/sprite.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-text">
-            <label for="coment" class="modal-label">Коментар</label>
+          <div class="form-order__text">
+            <label for="coment" class="form-order__label">Коментар</label>
             <textarea
               name="coment"
               id="coment"
-              class="modal-textarea"
+              class="form-order__textarea"
               placeholder="Введіть текст"
             ></textarea>
           </div>
 
-          <div class="modal-checkbox">
-            <label class="checkbox-label">
+          <div class="checkbox">
+            <label class="checkbox__label">
               <input
                 type="checkbox"
-                class="checkbox visually-hidden"
+                class="checkbox__input visually-hidden"
                 name="agreement"
               />
-              <span class="checkbox-icon">
-                <svg class="icon" width="16px" height="15px">
+              <span class="checkbox__item">
+                <svg class="checkbox__icon" width="16px" height="15px">
                   <use href="./imges/sprite.svg#icon-icon-check"></use>
                 </svg>
               </span>
-              <span class="checkbox-text">
+              <span class="checkbox__text">
                 Погоджуюся з розсилкою та приймаю
-                <a class="checkbox-link" href="">Умови договору</a>
+                <a class="checkbox__link" href="">Умови договору</a>
               </span>
             </label>
           </div>
-          <button type="submit" class="modal-btn">Відправити</button>
+          <button type="submit" class="button button--top">Відправити</button>
         </form>
       </div>
     </div>

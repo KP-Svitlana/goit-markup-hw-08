@@ -21,6 +21,11 @@
   width: 100%;
   height: 100%;
   transition: color var(--transition), border var(--transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--brand-color);
+  }
 }
 
 .logo-list__icon {
@@ -28,14 +33,9 @@
   height: 60px;
   fill: currentColor;
   transition: fill var(--transition);
-}
 
-.logo-list__link:hover,
-.logo-list__link:focus {
-  border: 1px solid var(--brand-color);
-}
-
-.logo-list__link:hover .logo-list__icon,
-.logo-list__link:focus .logo-list__icon {
-  fill: var(--brand-color);
+  .logo-list__link:hover &,
+  .logo-list__link:focus & {
+    fill: var(--brand-color);
+  }
 }

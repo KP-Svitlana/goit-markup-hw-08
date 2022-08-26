@@ -23,6 +23,11 @@
   background-color: var(--extra-color);
   border-radius: 50px;
   transition: color var(--transition), background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+  }
 }
 
 .social-list__link--dark {
@@ -35,14 +40,9 @@
   width: 20px;
   height: 20px;
   transition: fill var(--transition);
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--brand-color);
-}
-
-.social-list__link:hover .social-list__svg,
-.social-list__link:focus .social-list__svg {
-  fill: var(--extra-color);
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--extra-color);
+  }
 }

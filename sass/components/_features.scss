@@ -5,10 +5,10 @@
 .features__item {
   width: 270px;
   margin-left: 30px;
-}
 
-.features__item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .features__image {
