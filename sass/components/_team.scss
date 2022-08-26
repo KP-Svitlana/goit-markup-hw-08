@@ -41,19 +41,19 @@
   color: var(--text-color);
 }
 
-.team-soc-list {
+.social__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.team-soc-item {
+.social__item {
   width: 44px;
   height: 44px;
 }
 
-.team-soc-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,19 +67,19 @@
   transition: color var(--transition), background-color var(--transition);
 }
 
-.soc-item {
+.social_svg {
   fill: currentColor;
   width: 20px;
   height: 20px;
   transition: fill var(--transition);
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--brand-color);
 }
 
-.team-soc-link:hover .soc-item,
-.team-soc-link:focus .soc-item {
+.social__link:hover .social_svg,
+.social__link:focus .social_svg {
   fill: var(--extra-color);
 }
