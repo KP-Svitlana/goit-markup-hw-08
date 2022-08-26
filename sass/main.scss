@@ -1,23 +1,4 @@
-@import "./utils/variables";
-@import "./utils/visually-hidden";
+@import "./utils/utils.scss";
 @import "./base/base-settings";
-@import "./utils/backdrop";
-@import "./utils/checkbox";
-@import "./utils/button";
-
-@import "./components/logo";
-@import "./components/address";
-@import "./components/social-list";
-
-@import "./components/header";
-@import "./components/hero";
-@import "./components/features";
-@import "./components/work";
-@import "./components/team";
-@import "./components/logo-list";
-@import "./components/footer";
-@import "./components/form-subscribe";
-@import "./components/button-list";
-@import "./components/card-list";
-@import "./components/modal-window";
-@import "./components/form-order";
+@import "./components/components.scss";
+@import "./layout/layout.scss";
