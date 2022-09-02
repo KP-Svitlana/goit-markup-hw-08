@@ -5,6 +5,7 @@
   --text-color: #757575;
   --icon-color: #afb1b8;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .visually-hidden {
@@ -52,11 +53,32 @@ body {
   background-color: #f5f4fa;
 }
 
+.header,
+.section,
+.footer {
+  display: none;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -666,15 +688,42 @@ body {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero_img.jpg);
+  background-image: var(--bg-gradient), url(../imges/hero-mob.jpg);
   max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../imges/hero-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--bg-gradient), url(../imges/hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../imges/hero-tab@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: var(--bg-gradient), url(../imges/hero_img.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../imges/hero@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -682,14 +731,25 @@ body {
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
-  max-width: 696px;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--extra-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .features {
