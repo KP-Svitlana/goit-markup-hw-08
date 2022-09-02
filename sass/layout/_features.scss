@@ -1,19 +1,33 @@
+.section--on {
+  display: block;
+}
+
 .features {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
-  width: 270px;
-  margin-left: 30px;
+  width: 100%;
 
-  &:first-child {
-    margin-left: 0;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
   }
 }
 
 .features__box {
   background-color: #f5f4fa;
-  width: 270px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -34,6 +48,11 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .features__text {
