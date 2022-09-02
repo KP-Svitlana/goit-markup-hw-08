@@ -1,13 +1,22 @@
 .logo-list {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .logo-list__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .logo-list__link {

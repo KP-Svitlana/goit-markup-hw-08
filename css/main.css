@@ -41,13 +41,8 @@ body {
 }
 
 .header,
-.section,
 .footer {
   display: none;
-}
-
-.section--on {
-  display: block;
 }
 
 .container {
@@ -238,14 +233,25 @@ body {
 
 .logo-list {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .logo-list__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .logo-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .logo-list__link {
