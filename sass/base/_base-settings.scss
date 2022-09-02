@@ -17,26 +17,12 @@ body {
   font-size: 14px;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @include desktop {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.section--padding-top {
-  padding-top: 0;
-}
-
-.section--other-background {
-  background-color: #f5f4fa;
-}
-
 .header,
 .section,
 .footer {
   display: none;
+}
+
+.section--on {
+  display: block;
 }
