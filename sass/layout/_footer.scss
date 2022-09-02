@@ -6,16 +6,40 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer__address {
-  margin-right: 70px;
-  flex-grow: 1;
+  margin: 0 0 60px 0;
+
+  @include desktop {
+    margin: 0 70px 0 0;
+    flex-grow: 1;
+  }
 }
 
 .footer__footer-soc {
-  margin-right: 93px;
+  margin: 0 0 60px 0;
+
+  @include tablet {
+    margin: 0 0 0 165px;
+  }
+
+  @include desktop {
+    margin: 0 93px 0 0;
+  }
 }
 
 .footer-soc__title {

@@ -1,5 +1,9 @@
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
