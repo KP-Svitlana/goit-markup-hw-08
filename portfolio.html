@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__nav">
+      <div class="container container--padding header__nav">
         <a class="logo header__logo" lang="en" href=""
           >Web<span class="logo__text logo__text--dark">Studio</span></a
         >
@@ -62,6 +62,11 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-btn-open">
+          <svg class="menu-btn-open__icon" width="24px" height="16px">
+            <use href="./imges/sprite.svg#icon-menu_open"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -91,12 +96,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_1.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_1.jpg    1x,
+                        ./imges/portfolio/img_1@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_1-tab.jpg    1x,
+                        ./imges/portfolio/img_1-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_1-mob.jpg    1x,
+                        ./imges/portfolio/img_1-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_1-mob.jpg"
+                      alt="Технокряк"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -113,12 +142,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_2.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_2.jpg    1x,
+                        ./imges/portfolio/img_2@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_2-tab.jpg    1x,
+                        ./imges/portfolio/img_2-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_2-mob.jpg    1x,
+                        ./imges/portfolio/img_2-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_2-mob.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -137,12 +190,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_3.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_3.jpg    1x,
+                        ./imges/portfolio/img_3@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_3-tab.jpg    1x,
+                        ./imges/portfolio/img_3-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_3-mob.jpg    1x,
+                        ./imges/portfolio/img_3-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_3-mob.jpg"
+                      alt="Ресторан Seafood"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -161,12 +238,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_4.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_4.jpg    1x,
+                        ./imges/portfolio/img_4@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_4-tab.jpg    1x,
+                        ./imges/portfolio/img_4-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_4-mob.jpg    1x,
+                        ./imges/portfolio/img_4-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_4-mob.jpg"
+                      alt="Проєкт Prime"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -185,12 +286,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_5.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_5.jpg    1x,
+                        ./imges/portfolio/img_5@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_5-tab.jpg    1x,
+                        ./imges/portfolio/img_5-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_5-mob.jpg    1x,
+                        ./imges/portfolio/img_5-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_5-mob.jpg"
+                      alt="Проєкт Boxes"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -209,12 +334,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_6.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_6.jpg    1x,
+                        ./imges/portfolio/img_6@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_6-tab.jpg    1x,
+                        ./imges/portfolio/img_6-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_6-mob.jpg    1x,
+                        ./imges/portfolio/img_6-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_6-mob.jpg"
+                      alt="Inspiration has no Borders"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -233,12 +382,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_7.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_7.jpg    1x,
+                        ./imges/portfolio/img_7@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_7-tab.jpg    1x,
+                        ./imges/portfolio/img_7-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_7-mob.jpg    1x,
+                        ./imges/portfolio/img_7-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_7-mob.jpg"
+                      alt="Видання Limited Edition"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -257,12 +430,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_8.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_8.jpg    1x,
+                        ./imges/portfolio/img_8@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_8-tab.jpg    1x,
+                        ./imges/portfolio/img_8-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_8-mob.jpg    1x,
+                        ./imges/portfolio/img_8-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_8-mob.jpg"
+                      alt="Проект LAB"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -281,12 +478,36 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__img-wrap">
-                  <img
-                    src="./imges/portfolio/img_9.jpg"
-                    alt="Технокряк"
-                    class="card-list__img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./imges/portfolio/img_9.jpg    1x,
+                        ./imges/portfolio/img_9@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./imges/portfolio/img_9-tab.jpg    1x,
+                        ./imges/portfolio/img_9-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./imges/portfolio/img_9-mob.jpg    1x,
+                        ./imges/portfolio/img_9-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./imges/portfolio/img_9-mob.jpg"
+                      alt="Growing Business"
+                      class="card-list__img"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="card-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу

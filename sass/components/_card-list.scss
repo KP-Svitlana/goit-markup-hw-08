@@ -1,16 +1,30 @@
 .card-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .card-list__item {
-  width: calc(100% - 60px) / 3;
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition);
 
   &:hover,
@@ -52,6 +66,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .card-list__title {

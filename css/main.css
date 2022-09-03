@@ -331,15 +331,22 @@ body {
 
 .button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
-
-.button-list__item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 }
-.button-list__item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
 }
 
 .button-list__btn {
@@ -624,17 +631,35 @@ body {
 
 .card-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .card-list__item {
-  width: calc(100% - 60px)/3;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition);
 }
 .card-list__link:hover, .card-list__link:focus {
@@ -670,6 +695,7 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .card-list__title {
