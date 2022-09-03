@@ -37,9 +37,17 @@
   align-items: center;
   justify-content: center;
 
-  line-height: 1.71;
+  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {
