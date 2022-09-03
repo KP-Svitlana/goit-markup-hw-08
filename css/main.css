@@ -40,10 +40,6 @@ body {
   font-size: 14px;
 }
 
-.header {
-  display: none;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -66,19 +62,46 @@ body {
   }
 }
 
+.container--padding {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .container--padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .logo {
   display: block;
   color: var(--brand-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__text--dark {
@@ -708,15 +731,26 @@ body {
 }
 
 .info {
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    flex-direction: row;
+  }
 }
 
 .info__link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   color: var(--text-color);
   transition: color var(--transition);
@@ -724,14 +758,24 @@ body {
 .info__link:hover, .info__link:focus {
   color: var(--brand-color);
 }
+@media screen and (min-width: 1200px) {
+  .info__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .navigation__link--current {
   color: var(--brand-color);
 }
 
-.navigation,
-.info {
-  display: flex;
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
 }
 
 .navigation .navigation__item + .navigation__item {
@@ -739,12 +783,31 @@ body {
 }
 
 .info .info__item + .info__item {
-  margin-left: 50px;
+  margin-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .info .info__item + .info__item {
+    margin-left: 50px;
+  }
 }
 
 .info__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-btn-open {
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px 12px 8px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn-open {
+    display: none;
+  }
 }
 
 .hero {
