@@ -62,11 +62,73 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-btn-open">
+        <button type="button" class="menu-btn menu-btn--open" data-menu-open>
           <svg class="menu-btn-open__icon" width="24px" height="16px">
             <use href="./imges/sprite.svg#icon-menu_open"></use>
           </svg>
         </button>
+        <div class="menu-mobile is-hidden" data-menu>
+          <div class="menu-container">
+            <button
+              type="button"
+              class="menu-btn menu-btn--close"
+              data-menu-close
+            >
+              <svg class="menu-btn-close__icon" width="19px" height="19px">
+                <use href="./imges/sprite.svg#icon-menu_close"></use>
+              </svg>
+            </button>
+            <nav class="menu-navigation">
+              <ul class="menu-navigation__list list">
+                <li class="menu-navigation__item">
+                  <a
+                    class="menu-navigation__link navigation__link--current"
+                    href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="menu-navigation__item">
+                  <a class="menu-navigation__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="menu-navigation__item">
+                  <a class="menu-navigation__link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="menu-info list">
+              <li class="menu-info__item">
+                <a class="menu-info__link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="menu-info__item">
+                <a
+                  class="menu-info__link menu-info__link--gray"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-soc list">
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">Instagram</a>
+              </li>
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">Twitter</a>
+              </li>
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">Facebook</a>
+              </li>
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -612,5 +674,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
