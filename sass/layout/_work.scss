@@ -1,9 +1,5 @@
 .work {
-  display: none;
-
-  @include desktop {
-    display: flex;
-  }
+  display: flex;
 }
 
 .work__item {
